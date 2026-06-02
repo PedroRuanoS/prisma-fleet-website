@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
-  <rect x="10" y="10" width="80" height="80" fill="black" rx="4" />
-  <circle cx="75" cy="75" r="7" fill="white" />
-  <text x="105" y="60" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="52" fill="black" letter-spacing="-1">Bewegung</text>
-  <text x="110" y="85" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="16" fill="black">O seu sucesso e o nosso</text>
-</svg>
