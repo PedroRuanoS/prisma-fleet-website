@@ -2868,6 +2868,29 @@ ul { list-style: none; }
   }
 }
 
+/* ── Navy sweep transition overlay (language change) ──── */
+/* Matches the v2-prototype sweep exactly: --navy-2 (#1e3a5f), 0.62s, sharp easing. */
+#sweep {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  background: #1e3a5f;
+  transform: translateX(-100%);
+  pointer-events: none;
+}
+#sweep.go {
+  animation: sweepIn 1.1s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+}
+@keyframes sweepIn {
+  0%   { transform: translateX(-100%); }
+  45%  { transform: translateX(0); }
+  55%  { transform: translateX(0); }
+  100% { transform: translateX(100%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  #sweep.go { animation-duration: 0.01s; }
+}
+
 .lang-option {
   position: relative;
   z-index: 1;

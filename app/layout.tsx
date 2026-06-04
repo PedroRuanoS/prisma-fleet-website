@@ -138,6 +138,7 @@ export default async function RootLayout({
             <CookieBanner />
           </PostHogProvider>
         </NextIntlClientProvider>
+        <div id="sweep" />
       </body>
     </html>
   );
